@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/nadeshiko_pink">
 
 
     <RelativeLayout
         android:id="@+id/topLayout"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@color/nadeshiko_pink"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -42,11 +42,13 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/descriptionCard"
             android:layout_width="300dp"
             android:layout_height="150dp"
             android:layout_centerInParent="true"
             app:cardCornerRadius="30dp"
             android:elevation="8dp"
+            android:layout_marginBottom="50dp"
             android:layout_below="@id/countryTextView">
 
             <RelativeLayout
@@ -112,22 +114,148 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
-    </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLayout"
-        >
-
-
-        <TextView
-            android:id="@+id/resultsTextView"
-            android:layout_width="match_parent"
+        <androidx.cardview.widget.CardView
+            android:layout_width="225dp"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            />
+            android:layout_below="@id/descriptionCard"
+            android:layout_centerInParent="true"
+            android:elevation="8dp"
+            app:cardCornerRadius="30dp">
+
+
+            <GridLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="7">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Today" />
+
+                <ImageView
+                    android:id="@+id/todayIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_sunny"
+                    app:tint="@color/sunny_yellow" />
+
+
+
+            </GridLayout>
+
+        </androidx.cardview.widget.CardView>
+
     </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
